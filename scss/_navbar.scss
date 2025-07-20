@@ -1,9 +1,22 @@
 @use "variables" as *;
 
 .navbar {
-  background-color: $bg-navbar;
+  background: $bg-navbar;
   height: auto;
   padding: 0.5rem 1rem;
+
+  .nav-link{
+    color:aliceblue;
+    font-size: 1rem;
+    padding: 10px 15px;
+    font-weight: bold;
+
+    &:hover {
+      color: #052241; 
+      text-decoration: none; 
+      transition: color 0.3s ease; 
+  }
+  }
 
   .navbar-brand img {
     width: 80px;
